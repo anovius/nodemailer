@@ -13,7 +13,7 @@ app.post('/sendEmail', (req, res) => {
     const {message} = req.body
 
     var messageToSend = {
-        from: "Your Email Here",
+        from: "devusman2000@gmail.com",
         to: receiver, 
         subject:  subject,
         text: message,
@@ -23,8 +23,8 @@ app.post('/sendEmail', (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth:{
-            user: 'Your Email Here',
-            pass: 'Your Password Here*'
+            user: 'devusman2000@gmail.com',
+            pass: 'Nova2668*'
         }
     })
 
